@@ -4,6 +4,8 @@ const Inicio = () => import('./components/Inicio')
 import Search from './components/Search'
 import Sales from './components/Sales'
 import Total from './components/Total'
+import NotFound from './components/NotFound'
+
 
 
 
@@ -32,6 +34,11 @@ export default new Router({
             path: '/total',
             name: 'total',
             component: Total
-        }     
+        },
+        {
+            path: '/*',
+            name: 'NotFound',
+            component: NotFound
+        }
     ]
 })
