@@ -2,6 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 const Inicio = () => import('./components/Inicio')
 import Search from './components/Search.vue'
+import Sales from './components/Sales.vue'
+
+
 
 Vue.use(Router)
 
@@ -17,6 +20,11 @@ export default new Router({
             path: '/busqueda',
             name: 'search',
             component: Search
+        },
+        {
+            path: '/ventas',
+            name: 'sales',
+            component: Sales
         }     
     ]
 })
